@@ -11,7 +11,7 @@
  * **Using Flux with React.js** - Introduction and understanding of the Flux design pattern, its core features, how we’re using it in the project.
  * **User Authentication Component** - Build the React component that will handle user login via Social Networking sites.
  * **User Authentication API Endpoints** - The associated API endpoint that the user authentication component communicates with.
- * **Image Upload Component - Build the React component that will allow users to upload an image to the site.
+ * **Image Upload Component** - Build the React component that will allow users to upload an image to the site.
  * **Image Upload API Endpoint** - The associated API endpoint that the image upload component communicates with.
  * **Image and Image List Components** - Build the React components that will display a list of images.
  * **Image List API Endpoints** - The associated API endpoints that the image and image list components require.
