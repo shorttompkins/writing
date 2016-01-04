@@ -1,13 +1,13 @@
 # Table of Contents
 
- 1. **Introduction/Demo** - Welcome to the project, tech stack overview, and what to expect.
- * **Up and Running** - Get the tools and dependencies you need to get the app up and running on your local development workstation.
- * **Tour of the App and Codebase** - Take a quick tour of the app and its primary features as well as browse through the structure of the project codebase.
- * **Introduction to ES2015** - Brief introduction to the new features introduced with the latest version of JavaScript; ES2015 (a.k.a ES6)
- * **Getting Started with Webpack** - Webpack is the tool that will build our React.js app.
- * **ExpressJS Server 101** - Bootstrapping a basic ExpressJS web server and understanding configuration, middleware, controllers and view rendering.
- * **MongoDB and Mongoose Models** - Establish a database connection via our web server and build out data models using Mongoose.js.
- * **Writing Your First React Components** - Write a core App container component as well as layout and header components.
+ 1. **~~Introduction/Demo~~** - Welcome to the project, tech stack overview, and what to expect.
+ * **~~Up and Running~~** - Get the tools and dependencies you need to get the app up and running on your local development workstation.
+ * **~~Tour of the App and Codebase~~** - Take a quick tour of the app and its primary features as well as browse through the structure of the project codebase.
+ * **~~Introduction to ES2015~~** - Brief introduction to the new features introduced with the latest version of JavaScript; ES2015 (a.k.a ES6)
+ * **~~Getting Started with Webpack~~** - Webpack is the tool that will build our React.js app.
+ * **~~ExpressJS Server 101~~** - Bootstrapping a basic ExpressJS web server and understanding configuration, middleware, controllers and view rendering.
+ * **~~MongoDB and Mongoose Models~~** - Establish a database connection via our web server and build out data models using Mongoose.js.
+ * **~~Writing Your First React Components~~** - Write a core App container component as well as layout and header components.
  * **URLs with React Router** - Support custom URLs and bookmarking with React Router.
  * **Using Flux with React.js** - Introduction and understanding of the Flux design pattern, its core features, how we’re using it in the project.
  * **User Authentication Component** - Build the React component that will handle user login via Social Networking sites.
