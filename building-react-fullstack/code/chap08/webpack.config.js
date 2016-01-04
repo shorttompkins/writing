@@ -9,7 +9,7 @@ const sassLoaders = [
 ]
 
 module.exports = {
-  entry: './client/js/components/App.js',
+  entry: './client/js/main.js',
   output: {
     path: path.join(__dirname, './server/public/mrw/'),
     filename: 'app.js'
