@@ -47,6 +47,7 @@ Here's a breakdown of what to expect roughly every other week for the foreseeabl
  * Express Server 101
  * MongoDB and Mongoose Models
  * Writing Your First React Components
+ * URLs with React Router
  * Using Flux with React.js (states, dispatchers, actions, etc.)
  * User Authentication Component
  * User Authentication API Endpoints

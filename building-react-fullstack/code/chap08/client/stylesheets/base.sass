@@ -1,1 +1,73 @@
-body { background-color: #c0c0c0; }
+#app { width: 1000px; margin: auto auto; }
+
+body { font-family: Helvetica, Arial, sans-serif; font-size: 1em; }
+
+a { text-decoration: none; color: #404040; }
+
+button { outline: none; }
+
+.show { display: inherit; }
+.hide { display: none; }
+.float-right { float: right; }
+.float-left { float: left; }
+.clearfix { clear: both; }
+
+.input {
+  padding: .5em;
+  border: solid 1px #c0c0c0;
+  border-radius: 6px;
+  font-size: 1em;
+  outline: none;
+}
+
+.button {
+  outline: none;
+  padding: .5em;
+  border: solid 1px #c0c0c0;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.add-button {
+  background-color: #33C133;
+  color: #fff;
+  border: none;
+  &.right {
+    float: right;
+  }
+  &.left {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.body {
+  clear: both;
+
+  .random-link {
+    font-size: .75em;
+    float: right;
+    padding-top: .25em;
+  }
+}
+
+.error-message {
+  width: 100%;
+  padding: 10px;
+  background-color: #F3C6C6;
+  border: solid 1px red;
+  border-radius: 6px;
+  color: maroon;
+}
+
+@media (max-width: 1200px) {
+  #app {
+    width: 992px; margin: auto auto;
+  }
+}
+@media (max-width:992px) {
+  #app {
+    width: 99%;
+    margin: auto auto;
+  }
+}

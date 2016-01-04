@@ -60,9 +60,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var body = document.getElementsByTagName('body')[0];
-
-	_reactDom2.default.render(_react2.default.createElement(_App2.default, { place: 'World' }), body);
+	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -19673,6 +19671,8 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
+	__webpack_require__(165);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19691,30 +19691,13 @@
 	  }
 
 	  _createClass(App, [{
-	    key: 'clickLogger',
-	    value: function clickLogger(title) {
-	      console.log(title);
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var myvar = this.props.place;
-
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, { title: 'My First React Component', logger: this.clickLogger }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'body' },
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Hello ',
-	            myvar,
-	            '!'
-	          )
-	        )
+	        _react2.default.createElement(_Header2.default, null),
+	        _react2.default.createElement('div', { className: 'body' })
 	      );
 	    }
 	  }]);
@@ -19722,9 +19705,7 @@
 	  return App;
 	})(_react.Component);
 
-	App.propTypes = {
-	  place: _react2.default.PropTypes.string
-	};
+	App.propTypes = {};
 	exports.default = App;
 
 /***/ },
@@ -19743,6 +19724,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	__webpack_require__(161);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19755,30 +19738,72 @@
 	  _inherits(Header, _Component);
 
 	  function Header() {
+	    var _Object$getPrototypeO;
+
+	    var _temp, _this, _ret;
+
 	    _classCallCheck(this, Header);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Header).call(this));
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
 
-	    _this.clickLogger = _this.clickLogger.bind(_this);
-	    _this.state = { clickCounter: 0 };
-	    return _this;
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(Header)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.tagSearch = function () {
+	      console.log('tag search for: ' + _this.refs.tag.value);
+	      _this.refs.tag.value = '';
+	    }, _this.addImage = function () {
+	      console.log('goto: /image/add');
+	    }, _this.inputEnter = function (event) {
+	      if (event.key === 'Enter') {
+	        _this.tagSearch();
+	      }
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
 	  }
 
 	  _createClass(Header, [{
-	    key: 'clickLogger',
-	    value: function clickLogger() {
-	      this.setState({ clickCounter: this.state.clickCounter + 1 });
-	      this.props.logger(this.props.title);
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'h1',
-	        { onClick: this.clickLogger },
-	        this.props.title,
-	        ' - ',
-	        this.state.clickCounter
+	        'div',
+	        { className: 'header' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#' },
+	            'MRW.lol'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'main-search' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'input-group' },
+	            _react2.default.createElement('input', { type: 'text',
+	              className: 'input',
+	              ref: 'tag',
+	              placeholder: 'Search...',
+	              onKeyPress: this.inputEnter }),
+	            _react2.default.createElement(
+	              'button',
+	              { type: 'button', className: 'button', onClick: this.tagSearch },
+	              _react2.default.createElement('i', { className: 'fa fa-search' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            { type: 'button', onClick: this.addImage, className: 'button add-button' },
+	            _react2.default.createElement('i', { className: 'fa fa-plus' }),
+	            ' Add Image'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: '#' },
+	          'Login | Register'
+	        )
 	      );
 	    }
 	  }]);
@@ -19786,11 +19811,22 @@
 	  return Header;
 	})(_react.Component);
 
-	Header.propTypes = {
-	  title: _react.PropTypes.string,
-	  logger: _react.PropTypes.func
-	};
 	exports.default = Header;
+
+/***/ },
+/* 161 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

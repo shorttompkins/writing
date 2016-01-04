@@ -1,2 +1,185 @@
+.header {
+  position: relative;
+  height: 80px;
+  border-bottom: solid 1px #c0c0c0;
+  margin-bottom: 20px; }
+  .header h1 {
+    position: absolute;
+    left: 0px;
+    font-size: 3em;
+    width: 230px;
+    padding: 0px;
+    margin: 0px;
+    bottom: 10px; }
+  .header .main-search {
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+    width: 600px; }
+    .header .main-search .input-group {
+      width: 600px; }
+      .header .main-search .input-group .input {
+        width: 400px;
+        border-right: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px; }
+      .header .main-search .input-group .button {
+        display: inline-block;
+        width: 40px;
+        outline: none;
+        background-color: #fff;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px; }
+    .header .main-search .add-button {
+      position: absolute;
+      right: 10px;
+      top: 0px; }
+  .header .login-links {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    text-align: right;
+    width: 150px; }
+    .header .login-links a {
+      cursor: pointer; }
+    .header .login-links a.login {
+      display: block;
+      margin-bottom: 10px; }
+    .header .login-links .avatar {
+      width: 40px;
+      height: 40px;
+      border: solid 1px #000;
+      float: right;
+      margin-top: 10px;
+      margin-left: 5px; }
+      .header .login-links .avatar img {
+        width: 40px;
+        height: 40px; }
+    .header .login-links .login-popup {
+      z-index: 5;
+      text-align: left;
+      position: absolute;
+      top: 65px;
+      left: -686px;
+      width: 600px;
+      border: solid 1px #c0c0c0;
+      padding: 20px 40px;
+      background-color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      box-shadow: 4px 4px 30px -5px rgba(0, 0, 0, 0.6); }
+      .header .login-links .login-popup .close {
+        position: absolute;
+        top: -15px;
+        right: -15px; }
+      .header .login-links .login-popup .button {
+        padding: 10px;
+        display: inline-block;
+        width: 240px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        color: #fff; }
+        .header .login-links .login-popup .button.twitter {
+          background-color: #33CCFF;
+          border-color: transparent; }
+        .header .login-links .login-popup .button.facebook {
+          background-color: #3A5799;
+          border-color: transparent; }
+        .header .login-links .login-popup .button.google {
+          background-color: #DF4930;
+          border-color: transparent; }
+        .header .login-links .login-popup .button.github {
+          color: #000;
+          background-color: #F5F5F5; }
+        .header .login-links .login-popup .button i {
+          margin-right: 10px;
+          margin-left: 5px; }
+
+@media (max-width: 992px) {
+  .header h1 {
+    width: 200px; }
+  .header .main-search {
+    width: 50%;
+    left: 210px; }
+    .header .main-search .input-group {
+      width: 100%; }
+      .header .main-search .input-group .input {
+        width: 80%; } }
+#app {
+  width: 1000px;
+  margin: auto auto; }
+
 body {
-  background-color: #c0c0c0; }
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em; }
+
+a {
+  text-decoration: none;
+  color: #404040; }
+
+button {
+  outline: none; }
+
+.show {
+  display: inherit; }
+
+.hide {
+  display: none; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.clearfix {
+  clear: both; }
+
+.input {
+  padding: .5em;
+  border: solid 1px #c0c0c0;
+  border-radius: 6px;
+  font-size: 1em;
+  outline: none; }
+
+.button {
+  outline: none;
+  padding: .5em;
+  border: solid 1px #c0c0c0;
+  border-radius: 6px;
+  font-size: 1em; }
+
+.add-button {
+  background-color: #33C133;
+  color: #fff;
+  border: none; }
+  .add-button.right {
+    float: right; }
+  .add-button.left {
+    float: left;
+    margin-right: 10px; }
+
+.body {
+  clear: both; }
+  .body .random-link {
+    font-size: .75em;
+    float: right;
+    padding-top: .25em; }
+
+.error-message {
+  width: 100%;
+  padding: 10px;
+  background-color: #F3C6C6;
+  border: solid 1px red;
+  border-radius: 6px;
+  color: maroon; }
+
+@media (max-width: 1200px) {
+  #app {
+    width: 992px;
+    margin: auto auto; } }
+
+@media (max-width: 992px) {
+  #app {
+    width: 99%;
+    margin: auto auto; } }
