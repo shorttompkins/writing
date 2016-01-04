@@ -7,8 +7,10 @@ With our Express web server in a pretty solid state we're ready to move on to wr
 Before we can even start to write any React code, we need to first include it as a dependency for the project.
 
 ```bash
-$ npm install --save-dev react react-dom
+$ npm install --save react react-dom react-router
 ```
+
+...
 
 ## App Component
 
@@ -38,11 +40,27 @@ class App extends Component {
 export default App
 ```
 
-Before we can give new component a spin, we need to adjust our `webpack.config.js` file to point to our `App.js` file instead of the original `sample.js` file from chapter 5:
+Explain the above component...
+
+### Mounting to the DOM
+
+With App component created, it's not going to be able to do much until we actually mount it to the DOM.  This is where ...
+
+```javascript
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+ReactDOM.render(<App />, document.getElementById('app'))
+```
+
+
+### Update Webpack Entry File
+
+Before we can give new component a spin, we need to adjust our `webpack.config.js` file to point to our `main.js` file instead of the original `sample.js` file from chapter 5:
 
 ```javascript
 module.exports = {
-  entry: './client/js/components/App.js',
+  entry: './client/js/components/main.js',
 ```
 
 
