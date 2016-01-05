@@ -8,7 +8,7 @@
  * **~~ExpressJS Server 101~~** - Bootstrapping a basic ExpressJS web server and understanding configuration, middleware, controllers and view rendering.
  * **~~MongoDB and Mongoose Models~~** - Establish a database connection via our web server and build out data models using Mongoose.js.
  * **~~Writing Your First React Components~~** - Write a core App container component as well as layout and header components.
- * **URLs with React Router** - Support custom URLs and bookmarking with React Router.
+ * **~~URLs with React Router~~** - Support custom URLs and navigation with React Router.
  * **Using Flux with React.js** - Introduction and understanding of the Flux design pattern, its core features, how we’re using it in the project.
  * **User Authentication Component** - Build the React component that will handle user login via Social Networking sites.
  * **User Authentication API Endpoints** - The associated API endpoint that the user authentication component communicates with.

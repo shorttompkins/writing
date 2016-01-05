@@ -192,3 +192,40 @@ Now when you build the app and open it in the browser, the `ImagesList` that ren
 
 With our router fully functional, lets go ahead and setup the remaining routes for our app as well as placeholder components for each route.  Most of this will all be boilerplate code that will be incrementally replaced and iterated on throughout the remaining chapters.
 
+First let's define the remaining routes within the router.  Edit `client/js/main.js` and include the following `Routes` after the main `IndexRoute`:
+
+```javascript
+<Route path="users/:userid" component={ImagesList} />
+<Route path="images/:tag" component={ImagesList} />
+<Route path="users/:userid/:tag" component={ImagesList} />
+<Route path="image/add" component={AddImage} />
+<Route path="image/add/:id" component={AddImage} />
+```
+
+Savy readers will notice that the first three routes all use the same component.  This is because we will be passing different sets of filtered data to our `ImagesList` component but always rendering a "list of images".  Keep it DRY right!  Since we refer to an `AddImage` component, we need to make sure to create that component as well as import it our `main.js` file.
+
+Create and edit `client/js/component/images/AddImage.js` and include the following boilerplate placeholder code:
+
+```javascript
+// client/js/components/images/AddImage.js:
+
+import React, { Component, PropTypes } from 'react'
+
+class AddImage extends Component {
+  render() {
+    return (
+      <div>
+        <div className="image">
+          Add a new image here...
+        </div>
+      </div>
+    )
+  }
+}
+
+export default AddImage
+```
+
+## Conclusion
+
+Now that we have a solid understanding of the `react-router` module and how it benefits the navigation and organization of our app, its time to take a minor detour.  Eventually our app will need to grow beyond simple DOM components and extremely basic events.  We're going to need to make AJAX calls to our web server API, process async responses and promises, and deal with dynamic JSON data. Its time to learn all about the React inspired pattern called Flux and how it will benefit our app and usher in a new paradigm in single-page-application development.
