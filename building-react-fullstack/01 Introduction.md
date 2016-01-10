@@ -48,18 +48,16 @@ Here's a breakdown of what to expect roughly every other week for the foreseeabl
  * MongoDB and Mongoose Models
  * Writing Your First React Components
  * URLs with React Router
- * Using Flux with React.js (states, dispatchers, actions, etc.)
- * User Authentication Component
- * User Authentication API Endpoints
+ * Using Flux with React (stores, dispatchers, actions, etc.)
  * Image Upload Component
  * Image Upload API Endpoint
- * Image List Components
- * Image List API Endpoints
  * Image Search Component
  * Image Search API Endpoints
- * Deploying using Docker and Digital Ocean
+ * User Authentication Component
+ * User Authentication w/ Passport.js
  * Unit Testing React.js Components
  * Unit Testing Node.js Modules
+ * Deploying using Docker and Digital Ocean
 
 Check out one of my previous massive posts (BENM Boilerplate) to get a pretty good understanding of what you're in for.
 

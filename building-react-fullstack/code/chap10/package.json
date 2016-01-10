@@ -1,5 +1,5 @@
 {
-  "name": "mrw_chap09",
+  "name": "mrw_chap10",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "flux": "^2.1.1",
     "history": "^1.17.0",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
     "react-router": "^1.0.3",
+    "superagent": "^1.6.1",
     "body-parser": "^1.14.2",
     "connect-mongo": "^1.1.0",
     "cookie-parser": "^1.4.0",

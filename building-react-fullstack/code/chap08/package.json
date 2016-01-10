@@ -4,14 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --use_strict server/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
-    "react-router": "^1.0.3"
+    "react-router": "^1.0.3",
+    "body-parser": "^1.14.2",
+    "connect-mongo": "^1.1.0",
+    "cookie-parser": "^1.4.0",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.12.1",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.3.4",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "sanitize-html": "^1.11.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.2.2",

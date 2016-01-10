@@ -1,0 +1,124 @@
+.header {
+  position: relative;
+  height: 80px;
+  border-bottom: solid 1px #c0c0c0;
+  margin-bottom: 20px;
+  h1 {
+    position: absolute;
+    left: 0px;
+    font-size: 3em;
+    width: 230px;
+    padding: 0px;
+    margin: 0px;
+    bottom: 10px;
+  }
+  .main-search {
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+    width: 600px;
+    .input-group {
+      width: 600px;
+      .input {
+        width: 400px;
+        border-right: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      .button {
+        display: inline-block;
+        width: 40px;
+        outline: none;
+        background-color: #fff;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+    }
+    .add-button {
+      position: absolute;
+      right: 10px;
+      top: 0px;
+    }
+  }
+  .login-links {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    text-align: right;
+    width: 150px;
+    a {
+      cursor: pointer;
+    }
+    a.login {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border: solid 1px #000;
+      float: right;
+      margin-top: 10px;
+      margin-left: 5px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .login-popup {
+      z-index: 5;
+      text-align: left;
+      position: absolute;
+      top: 65px;
+      left: -686px;
+      width: 600px;
+      border: solid 1px #c0c0c0;
+      padding: 20px 40px;
+      background-color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      -webkit-box-shadow: 4px 4px 30px -5px rgba(0,0,0,0.6);
+      -moz-box-shadow: 4px 4px 30px -5px rgba(0,0,0,0.6);
+      box-shadow: 4px 4px 30px -5px rgba(0,0,0,0.6);
+      .close {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+      }
+      .button {
+        padding: 10px;
+        display: inline-block;
+        width: 240px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        color: #fff;
+        &.twitter { background-color: #33CCFF; border-color: transparent; }
+        &.facebook { background-color: #3A5799; border-color: transparent; }
+        &.google { background-color: #DF4930; border-color: transparent; }
+        &.github { color: #000; background-color: #F5F5F5; }
+        i {
+          margin-right: 10px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:992px) {
+  .header {
+    h1 {
+      width: 200px;
+    }
+    .main-search {
+      width: 50%;
+      left: 210px;
+      .input-group {
+        width: 100%;
+        .input {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
